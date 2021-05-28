@@ -1,0 +1,16 @@
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\bin\Debug\net5.0\Cafeteira.exe
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\bin\Debug\net5.0\Cafeteira.deps.json
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\bin\Debug\net5.0\Cafeteira.runtimeconfig.json
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\bin\Debug\net5.0\Cafeteira.runtimeconfig.dev.json
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\bin\Debug\net5.0\Cafeteira.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\bin\Debug\net5.0\ref\Cafeteira.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\bin\Debug\net5.0\Cafeteira.pdb
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\obj\Debug\net5.0\Cafeteira.csprojAssemblyReference.cache
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\obj\Debug\net5.0\Cafeteira.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\obj\Debug\net5.0\Cafeteira.AssemblyInfoInputs.cache
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\obj\Debug\net5.0\Cafeteira.AssemblyInfo.cs
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\obj\Debug\net5.0\Cafeteira.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\obj\Debug\net5.0\Cafeteira.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\obj\Debug\net5.0\ref\Cafeteira.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\obj\Debug\net5.0\Cafeteira.pdb
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Cafeteira\obj\Debug\net5.0\Cafeteira.genruntimeconfig.cache

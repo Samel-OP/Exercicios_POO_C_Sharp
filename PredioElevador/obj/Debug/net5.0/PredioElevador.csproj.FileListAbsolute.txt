@@ -1,0 +1,16 @@
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\bin\Debug\net5.0\PredioElevador.exe
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\bin\Debug\net5.0\PredioElevador.deps.json
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\bin\Debug\net5.0\PredioElevador.runtimeconfig.json
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\bin\Debug\net5.0\PredioElevador.runtimeconfig.dev.json
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\bin\Debug\net5.0\PredioElevador.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\bin\Debug\net5.0\ref\PredioElevador.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\bin\Debug\net5.0\PredioElevador.pdb
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\obj\Debug\net5.0\PredioElevador.csprojAssemblyReference.cache
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\obj\Debug\net5.0\PredioElevador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\obj\Debug\net5.0\PredioElevador.AssemblyInfoInputs.cache
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\obj\Debug\net5.0\PredioElevador.AssemblyInfo.cs
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\obj\Debug\net5.0\PredioElevador.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\obj\Debug\net5.0\PredioElevador.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\obj\Debug\net5.0\ref\PredioElevador.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\obj\Debug\net5.0\PredioElevador.pdb
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\PredioElevador\obj\Debug\net5.0\PredioElevador.genruntimeconfig.cache

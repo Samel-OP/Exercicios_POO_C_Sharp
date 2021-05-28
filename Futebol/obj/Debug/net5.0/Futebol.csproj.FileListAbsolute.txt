@@ -1,0 +1,16 @@
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\bin\Debug\net5.0\Futebol.exe
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\bin\Debug\net5.0\Futebol.deps.json
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\bin\Debug\net5.0\Futebol.runtimeconfig.json
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\bin\Debug\net5.0\Futebol.runtimeconfig.dev.json
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\bin\Debug\net5.0\Futebol.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\bin\Debug\net5.0\ref\Futebol.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\bin\Debug\net5.0\Futebol.pdb
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\obj\Debug\net5.0\Futebol.csprojAssemblyReference.cache
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\obj\Debug\net5.0\Futebol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\obj\Debug\net5.0\Futebol.AssemblyInfoInputs.cache
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\obj\Debug\net5.0\Futebol.AssemblyInfo.cs
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\obj\Debug\net5.0\Futebol.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\obj\Debug\net5.0\Futebol.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\obj\Debug\net5.0\ref\Futebol.dll
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\obj\Debug\net5.0\Futebol.pdb
+C:\Users\samue\Documents\Desenvolvimento de sistemas\Projetos\Backend - projetos\POO\Exercicios\Futebol\obj\Debug\net5.0\Futebol.genruntimeconfig.cache
