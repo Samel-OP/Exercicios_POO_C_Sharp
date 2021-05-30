@@ -13,7 +13,7 @@ namespace Futebol.Classes
 
             else
             {
-                Console.WriteLine($"Falta {35 - idadeJogador} anos para o jogador se aposentar");
+                Console.WriteLine($"\nFalta {35 - idadeJogador} anos para o jogador se aposentar\n");
             }
         }
     }

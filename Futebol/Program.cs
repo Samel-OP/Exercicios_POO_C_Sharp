@@ -13,13 +13,10 @@ namespace Futebol
             JogadorDefesa d = new JogadorDefesa();
             JogadorMeioCampo m = new JogadorMeioCampo();
 
-            a.Menu();
-            a.Informacoes();
-            a.Idade();
 
             do
             {
-                Console.WriteLine("Deseja ver quando vai poder se aposentar em alguma das posições?");
+
                 Console.WriteLine(@"
 Qual dessas posições o jogador faz parte:
 
@@ -31,37 +28,46 @@ Qual dessas posições o jogador faz parte:
 
 X - Sair do programa" + "\n");
 
-                string opcao2 = Console.ReadLine().ToLower();
+                string opcao = Console.ReadLine().ToLower();
 
-                if (opcao2 == "1")
+                if (opcao == "1")
                 {
+                    a.Menu();
+                    a.MostrarDados();
+                    a.Idade();
                     a.Aposentadoria();
                     refazerAposentadoria = true;
                 }
 
-                else if (opcao2 == "2")
+                else if (opcao == "2")
                 {
+                    d.Menu();
+                    d.MostrarDados();
+                    d.Idade();
                     d.Aposentadoria();
                     refazerAposentadoria = true;
                 }
 
-                else if (opcao2 == "3")
+                else if (opcao == "3")
                 {
+                    m.Menu();
+                    m.MostrarDados();
+                    m.Idade();
                     m.Aposentadoria();
                     refazerAposentadoria = true;
                 }
 
-                else if (opcao2 == "x")
+                else if (opcao == "x")
                 {
                     refazerAposentadoria = true;
                 }
 
                 else
                 {
-                    Console.WriteLine("Opção inválida");
+                    Console.WriteLine("\nOpção inválida");
                     refazerAposentadoria = false;
                 }
-                
+
             } while (refazerAposentadoria == false);
         }
     }

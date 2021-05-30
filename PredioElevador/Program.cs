@@ -11,15 +11,17 @@ namespace PredioElevador
 
             int totalAndares = 0;
 
-            int capacidade = 0;
-
             int quantidadePessoas = 0;
+
+            int quantidadeCaixas = 0;
 
             bool refazerMenu = false;
 
             Console.WriteLine("Qual é o total de andares do prédio?");
             totalAndares = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Qual é a capacidade do elevador?");
+            int capacidade = int.Parse(Console.ReadLine());
 
             ElevadorSocial c = new ElevadorSocial();
             c.Inicializa(capacidade);
@@ -59,17 +61,20 @@ X - Sair do programa" + "\n");
 
                             if (opcao2 == "1")
                             {
+                                Console.WriteLine("Quantas pessoas vão entrar?");
+                                quantidadePessoas = int.Parse(Console.ReadLine());
+
                                 ElevadorSocial social = new ElevadorSocial();
-                                social.Entrar(capacidade, quantidadePessoas);
-                                quantidadePessoas++;
+                                capacidade = capacidade - quantidadePessoas;
+                                social.Entrar(quantidadePessoas, capacidade);
                                 refazerOpcao = false;
                             }
 
                             else if (opcao2 == "2")
                             {
                                 ElevadorSocial social = new ElevadorSocial();
-                                social.Sair(capacidade, quantidadePessoas);
-                                quantidadePessoas--;
+                                capacidade = capacidade + quantidadePessoas;
+                                social.Sair(quantidadePessoas);
                                 refazerOpcao = false;
                             }
 
@@ -84,7 +89,7 @@ X - Sair do programa" + "\n");
                             else if (opcao2 == "4")
                             {
                                 ElevadorSocial social = new ElevadorSocial();
-                                social.Descer(andarAtual - 1, totalAndares);
+                                social.Descer(andarAtual, totalAndares);
                                 andarAtual--;
                                 refazerOpcao = false;
                             }
@@ -121,14 +126,16 @@ X - Sair do programa" + "\n");
                             if (opcao3 == "1")
                             {
                                 ElevadorServico servico = new ElevadorServico();
-                                servico.Entrar(capacidade, quantidadePessoas);
+                                quantidadePessoas = capacidade - quantidadeCaixas;
+                                servico.Caixas(quantidadeCaixas);
                                 refazerOpcao = false;
                             }
 
                             else if (opcao3 == "2")
                             {
                                 ElevadorServico servico = new ElevadorServico();
-                                servico.Sair(capacidade, quantidadePessoas);
+                                capacidade = capacidade + quantidadeCaixas;
+                                servico.SairCaixas(quantidadeCaixas, capacidade);
                                 refazerOpcao = false;
                             }
 
@@ -136,6 +143,7 @@ X - Sair do programa" + "\n");
                             {
                                 ElevadorServico servico = new ElevadorServico();
                                 servico.Subir(andarAtual, totalAndares);
+                                andarAtual++;
                                 refazerOpcao = false;
                             }
 
@@ -143,6 +151,7 @@ X - Sair do programa" + "\n");
                             {
                                 ElevadorServico servico = new ElevadorServico();
                                 servico.Descer(andarAtual, totalAndares);
+                                andarAtual--;
                                 refazerOpcao = false;
                             }
 

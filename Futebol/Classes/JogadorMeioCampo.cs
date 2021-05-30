@@ -8,12 +8,12 @@ namespace Futebol.Classes
         {
             if (idadeJogador >= 38)
             {
-                Console.WriteLine($"O jogador pode se aposentar porque tem {idadeJogador}");
+                Console.WriteLine($"O jogador pode se aposentar porque tem {idadeJogador} anos");
             }
 
             else
             {
-                Console.WriteLine($"Falta {38 - idadeJogador} anos para o jogador se aposentar");
+                Console.WriteLine($"\nFalta {38 - idadeJogador} anos para o jogador se aposentar\n");
             }
         }
     }

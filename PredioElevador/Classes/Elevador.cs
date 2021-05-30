@@ -8,7 +8,7 @@ namespace PredioElevador.Classes
 
         public int totalAndares;
 
-        public int capacidade {get; set;}
+        public int capacidade;
 
         public int quantidadePessoas;
 
@@ -17,34 +17,29 @@ namespace PredioElevador.Classes
 
         public int Inicializa(int capacidade)
         {
-            Console.WriteLine("Qual é a capacidade do elevador?");
-            capacidade = int.Parse(Console.ReadLine());
-            
             return capacidade;
         }
 
-        public int Entrar(int Capacidade, int quantidadePessoas)
+        public int Entrar(int quantidadePessoas, int capacidade)
         {
-            quantidadePessoas++;
-
-            if (quantidadePessoas > Inicializa(capacidade))
+            if (quantidadePessoas <= capacidade)
             {
-                Console.WriteLine($"Capacidade máxima é {capacidade}, não é possível adicionar mais {quantidadePessoas} pessoas!");
+                Console.WriteLine($"\n{capacidade} restantes para chegar a capacidade máxima");
             }
 
             else
             {
-                Console.WriteLine($"{quantidadePessoas + 1} restantes para chegar a capacidade máxima");
+                Console.WriteLine($"Capacidade máxima atingida, agora em diante não é possível adicionar mais pessoas!");
             }
 
             return quantidadePessoas;
         }
 
-        public int Sair(int capacidade, int quantidadePessoas)
+        public int Sair(int quantidadePessoas)
         {
             if (quantidadePessoas > capacidade)
             {
-                Console.WriteLine($"{quantidadePessoas} estão saindo");
+                Console.WriteLine($"\n{quantidadePessoas} estão saindo");
             }
 
             else
@@ -60,11 +55,13 @@ namespace PredioElevador.Classes
             if (andarAtual >= totalAndares)
             {
                 Console.WriteLine("Não é possível subir mais, este é o último andar!");
+                andarAtual = andarAtual - 1;
             }
 
             else
             {
                 Console.WriteLine($"Agora você está no {andarAtual + 1}° andar");
+                andarAtual = totalAndares;
             }
 
             return andarAtual;
@@ -72,14 +69,16 @@ namespace PredioElevador.Classes
 
         public int Descer(int andarAtual, int totalAndares)
         {
-            if (andarAtual == 0)
+            if (andarAtual <= 0)
             {
-                Console.WriteLine($"Agora você está no térreo não é possível descer mais!");
+                Console.WriteLine($"\nAgora você está no térreo não é possível descer mais!");
+                andarAtual = andarAtual - andarAtual;
+                andarAtual = 0;
             }
 
             else
             {
-                Console.WriteLine($"Agora você está no {andarAtual - 1}° andar");
+                Console.WriteLine($"\nAgora você está no {andarAtual - 1}° andar");
             }
 
             return andarAtual;

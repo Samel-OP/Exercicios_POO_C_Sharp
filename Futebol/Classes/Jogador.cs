@@ -42,52 +42,12 @@ namespace Futebol.Classes
             Console.WriteLine("Escreva o peso do jogador: ");
             peso = double.Parse(Console.ReadLine());
 
-            Console.WriteLine(@"
-Qual dessas posições o jogador faz parte:
-
-1 - Ataque
-
-2 - Defesa
-
-3 - Meio Campo
-
-X - Sair do programa" + "\n");
-
         }
 
         public void Idade()
         {
             idadeJogador = AnoAtual.Year - anoNascimento;
             Console.WriteLine($"A idade do jogador é {idadeJogador}");
-        }
-
-        public void Informacoes()
-        {
-            string opcao = Console.ReadLine().ToLower();
-
-            switch (opcao)
-            {
-                case "1":
-                    JogadorAtaque a = new JogadorAtaque();
-                    a.MostrarDados(nome, anoNascimento, nacionalidade, altura, peso);
-                    break;
-
-                case "2":
-                    JogadorDefesa d = new JogadorDefesa();
-                    d.MostrarDados(nome, anoNascimento, nacionalidade, altura, peso);
-                    break;
-
-                case "3":
-                    JogadorMeioCampo m = new JogadorMeioCampo();
-                    m.MostrarDados(nome, anoNascimento, nacionalidade, altura, peso);
-                    break;
-
-                case "x":
-                    break;
-
-                default:
-                    break;
-            }
         }
 
         public virtual void Aposentadoria()
@@ -103,7 +63,7 @@ X - Sair do programa" + "\n");
             }
         }
 
-        public void MostrarDados(string nome, int anoNascimento, string nacionalidade, double altura, double peso)
+        public void MostrarDados()
         {
             Console.WriteLine($"O nome do jogador é {nome}");
             Console.WriteLine($"O ano de nascimento do jogador é {anoNascimento}");
