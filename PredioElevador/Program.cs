@@ -7,24 +7,19 @@ namespace PredioElevador
     {
         static void Main(string[] args)
         {
-            int andarAtual = 0;
+            string opcao;
+            string opcao2;
+            bool opcaoF = false;
+            bool opcaoF2 = false;
+            bool opcaoF3 = false;
 
-            int totalAndares = 0;
+            Console.WriteLine("Bem vindo ao Elevador!");
 
-            int quantidadePessoas = 0;
+            ElevadorServico servico = new ElevadorServico();
+            ElevadorSocial social = new ElevadorSocial();
 
-            int quantidadeCaixas = 0;
-
-            bool refazerMenu = false;
-
-            Console.WriteLine("Qual é o total de andares do prédio?");
-            totalAndares = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Qual é a capacidade do elevador?");
-            int capacidade = int.Parse(Console.ReadLine());
-
-            ElevadorSocial c = new ElevadorSocial();
-            c.Inicializa(capacidade);
+            social.Inicializa(3, 2);
+            servico.Inicializar(3,2);
 
             do
             {
@@ -35,16 +30,15 @@ Qual elevador deseja usar? (Selecione uma das duas opções)
 
 2 - Elevador Serviço" + "\n");
 
-                string opcao = Console.ReadLine();
+                opcao = Console.ReadLine();
 
-                bool refazerOpcao = false;
 
-                do
+                if (opcao == "1")
                 {
-                    switch (opcao)
+                    do
                     {
-                        case "1":
-                            Console.WriteLine(@"
+
+                        Console.WriteLine(@"
 Escolher uma das opções abaixo:
 
 1 - Entrar
@@ -57,58 +51,50 @@ Escolher uma das opções abaixo:
 
 X - Sair do programa" + "\n");
 
-                            string opcao2 = Console.ReadLine();
 
-                            if (opcao2 == "1")
-                            {
-                                Console.WriteLine("Quantas pessoas vão entrar?");
-                                quantidadePessoas = int.Parse(Console.ReadLine());
+                        opcao2 = Console.ReadLine().ToLower();
+                        switch (opcao2)
+                        {
+                            case "1":
+                                social.Entrar();
+                                opcaoF = false;
+                                break;
 
-                                ElevadorSocial social = new ElevadorSocial();
-                                capacidade = capacidade - quantidadePessoas;
-                                social.Entrar(quantidadePessoas, capacidade);
-                                refazerOpcao = false;
-                            }
+                            case "2":
+                                social.Sair();
+                                opcaoF = false;
+                                break;
 
-                            else if (opcao2 == "2")
-                            {
-                                ElevadorSocial social = new ElevadorSocial();
-                                capacidade = capacidade + quantidadePessoas;
-                                social.Sair(quantidadePessoas);
-                                refazerOpcao = false;
-                            }
+                            case "3":
+                                social.Subir();
+                                opcaoF = false;
+                                break;
 
-                            else if (opcao2 == "3")
-                            {
-                                ElevadorSocial social = new ElevadorSocial();
-                                social.Subir(andarAtual, totalAndares);
-                                andarAtual++;
-                                refazerOpcao = false;
-                            }
+                            case "4":
+                                social.Descer();
+                                opcaoF = false;
+                                break;
 
-                            else if (opcao2 == "4")
-                            {
-                                ElevadorSocial social = new ElevadorSocial();
-                                social.Descer(andarAtual, totalAndares);
-                                andarAtual--;
-                                refazerOpcao = false;
-                            }
+                            case "x":
+                                Console.WriteLine("Obrigado por usar nosso elevador!");
+                                opcaoF = true;
+                                opcaoF2 = true;
+                                break;
 
-                            else if (opcao2 == "x")
-                            {
-                                refazerOpcao = true;
-                            }
-
-                            else
-                            {
+                            default:
                                 Console.WriteLine("Opção inválida!");
-                            }
+                                opcaoF = false;
+                                break;
+                        }
+                    } while (opcaoF == false);
 
-                            refazerMenu = true;
-                            break;
+                }
 
-                        case "2":
-                            Console.WriteLine(@"
+                else if (opcao == "2")
+                {
+                    do
+                    {
+                        Console.WriteLine(@"
 Escolher uma das opções abaixo:
 
 1 - Entrar
@@ -121,56 +107,48 @@ Escolher uma das opções abaixo:
 
 X - Sair do programa" + "\n");
 
-                            string opcao3 = Console.ReadLine();
+                        opcao2 = Console.ReadLine().ToLower();
+                        switch (opcao2)
+                        {
+                            case "1":
+                                servico.Caixas();
+                                opcaoF3 = false;
+                                break;
 
-                            if (opcao3 == "1")
-                            {
-                                ElevadorServico servico = new ElevadorServico();
-                                quantidadePessoas = capacidade - quantidadeCaixas;
-                                servico.Caixas(quantidadeCaixas);
-                                refazerOpcao = false;
-                            }
+                            case "2":
+                                servico.SairCaixas();
+                                opcaoF3 = false;
+                                break;
 
-                            else if (opcao3 == "2")
-                            {
-                                ElevadorServico servico = new ElevadorServico();
-                                capacidade = capacidade + quantidadeCaixas;
-                                servico.SairCaixas(quantidadeCaixas, capacidade);
-                                refazerOpcao = false;
-                            }
+                            case "3":
+                                social.Subir();
+                                opcaoF3 = false;
+                                break;
 
-                            else if (opcao3 == "3")
-                            {
-                                ElevadorServico servico = new ElevadorServico();
-                                servico.Subir(andarAtual, totalAndares);
-                                andarAtual++;
-                                refazerOpcao = false;
-                            }
+                            case "4":
+                                social.Descer();
+                                opcaoF3 = false;
+                                break;
 
-                            else if (opcao3 == "4")
-                            {
-                                ElevadorServico servico = new ElevadorServico();
-                                servico.Descer(andarAtual, totalAndares);
-                                andarAtual--;
-                                refazerOpcao = false;
-                            }
+                            case "x":
+                                Console.WriteLine("Obrigado por usar nosso elevador!");
+                                opcaoF3 = true;
+                                opcaoF2 = true;
+                                break;
 
-                            else if (opcao3 == "x")
-                            {
-                                refazerOpcao = true;
-                            }
+                            default:
+                                Console.WriteLine("Opção inválida!");
+                                opcaoF3 = false;
+                                break;
+                        }
+                    } while (opcaoF3 == false);
+                }
 
-                            refazerMenu = true;
-                            break;
-
-                        default:
-                            Console.WriteLine("Opção inválida!");
-                            refazerMenu = false;
-                            break;
-                    }
-                } while (refazerOpcao == false);
-
-            } while (refazerMenu == false);
+                else
+                {
+                    Console.WriteLine("Opção inválida");
+                }
+            } while (opcaoF2 == false);
         }
     }
 }
